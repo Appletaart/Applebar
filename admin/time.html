@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script type="application/javascript">
+    countDown(10,"status");
+
+    function countDown(secs, elem) {
+
+        var element = document.getElementById(elem); //elem is dinamic paramitor
+
+        element.innerHTML = "wait for "+secs+" seconds";
+        if (secs < 1){
+            clearTimeout(timer);
+            element.innerHTML = 'countdown complete <br>';
+            element.innerHTML += '<a href="">click here</a>';
+        }
+        secs--;
+        var timer = setTimeout('countDown('+secs+', "'+elem+'")', 1000);
+    }
+
+</script>
+<div id="status">
+    <script type="application/javascript"> countDown(10,"status");</script>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

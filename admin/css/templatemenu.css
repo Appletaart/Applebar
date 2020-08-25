@@ -1,0 +1,131 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.input-form{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #a71d2a;
+}
+.form-input{
+
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+
+.menucard-img {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 65vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.editcard-img {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 25vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+a img{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    vertical-align: middle;
+    border-style: none;
+}
+.hr{
+    border: 0.5rem solid #000000;
+}
+
+.chart {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+}
+
+.donutbar{
+    position: absolute;
+    font-size: 0.6rem;
+    width: 5rem;
+    height: 2rem;
+}
+
+.ad{
+    position: absolute;
+    right: 5%;
+    bottom: 20px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ad input, .ad textarea{
+    background-color: transparent;
+    color: white;
+}
+
+.ad input[type], .ad textarea{
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+}
